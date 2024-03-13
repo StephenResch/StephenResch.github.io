@@ -14,32 +14,39 @@
     <div id="content">
         <div id="banner">
             <h1>Home Page</h1>
-            <a href="index.html">Home</a>  |
+            <a href="index.html">Home</a> |
             <a href="about.html">About Me</a> |
-            <a href="gameguide.html">Get To School</a>  |
+            <a href="gameguide.html">Get To School</a> |
             <a href="#" onclick="changeSheet()">Toggle Arson</a>
         </div>
 
         <div id="blogposts">
-            <div class="post"> 
+            <div class="post">
                 <h2>Welcome to my website!</h2>
                 <p>Thank you for visiting this site. To move around, left-click the links below <br>
-                    the "Home Page" text. The "About Me" section covers my personality <br>
-                  and academics.</p>
+                    the "Home Page" text. The "About Me" section covers my personality, <br>
+                    academics, and activites I partake in. The "Get To School" section includes <br>
+                    information about the game, some images depicting key features, and the link to play.
+                    Finally, click "Toggle Arson" to deep fry the page like fish at Long John Silvers.</p>
             </div>
             <div class="post">
                 <h2 style="display: block;">Purpose</h2>
-                <p>Get To School is a smash hit indie game where you can sniff glue.</p>
-                <p>Click <a href="getToSchool/index.html">here</a> to play.</p>
+                <p>There are two main purposes for this website. The first is for having a <br>
+                    place to put my game, because in its current state, it's size does not <br>
+                    validate a spot on Steam, a PC gaming platform. The second reason for creating
+                    this website is to keep followers of the game updated on whatever is going on.
+                    This can include game updates, Q&A's and community polls.</p>
             </div>
             <div class="post">
-                <h2 style="display: block;">Q&A</h2>
+                <h2 style="display: block;">Small Q&A</h2>
                 <b>Why is some of your information left out?</b>
-                <p>Since this website is accessable to anyone, the information presented can be used <br>
-                for good or bad. I censored a bit of it to keep my privacy intact.</p>
+                <p>Since this website is accessable to anyone, the information presented <br>
+                    can be used
+                    for good or bad. I censored a bit of it to <br>
+                    keep my privacy intact.</p>
                 <b>How often will Get To School be updated?</b>
                 <p>The rate of updates will depend on my ability to come up with unique ideas. <br>
-                It will take longer if I make a large amount of changes to group together in one release.</p>
+                    It will take longer if I make a large amount of changes to group together in one release.</p>
                 <b>How can someone contact you?</b>
                 <p>They could contact me through Gmail and social media when I set up the accounts.</p>
             </div>
@@ -51,24 +58,24 @@
 
 <script>
 
-var lightMode = true;
+    var lightMode = true;
 
-function changeSheet() {
-    // make lightMode equal NOT lightMode
-    lightMode = !lightMode;
-    var lightSheet = document.getElementById("lightSheet");
-    var darkSheet = document.getElementById("darkSheet");
-    // if lightMode turned off, display dark stylesheet
-    if (lightMode == false) {
-    console.log("Turning dark mode on...");
-    darkSheet.media = "";
-    lightSheet.media = "none";
-    } else {
-    console.log("Turning light mode on...");
-    darkSheet.media = "none";
-    lightSheet.media = "";
+    function changeSheet() {
+        // make lightMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if lightMode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
     }
-}
 
 </script>
 
