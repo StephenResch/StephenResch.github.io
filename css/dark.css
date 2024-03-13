@@ -1,0 +1,72 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/originals/f9/6d/fb/f96dfb9f9d4e0b42af3888de8b9473a7.gif");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+background-color: #000;
+padding: 0 8%;
+min-height: 80vh;
+width: 84%;
+}
+
+#banner {
+    background-image: linear-gradient(to right, red, orange, yellow);
+    text-align: left;
+    border: 10px solid rgb(114, 114, 221);
+    margin: 15px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    float: left;
+    width: 25%;
+    color: white;
+    text-decoration: underline;
+}
+
+#content {
+    width: 100%;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#blogposts {
+    margin: 15px;
+    width: 70%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #adb81a;
+}
+
+.post {
+    margin: 10px;
+    height: 40%;
+    width: 70%;
+    float: right;
+    padding: 40px;
+    border: 10px solid rgb(114, 114, 221);
+    background-image: linear-gradient(to right, red, orange, yellow);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.post:nth-child(even) {
+    float: left;
+}
+
+
+
+.post .left {
+    float: left;
+    margin-right: 10px;
+}
+
+.post img {
+    width: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

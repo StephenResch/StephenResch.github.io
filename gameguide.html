@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumpster Dave's Sweatshop</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>Get To School</h1>
+            <a href="index.html">Home</a>  |
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School</a>  |
+            <a href="#" onclick="changeSheet()">Toggle Arson</a>
+        </div>
+
+        <div id="blogposts">
+            <div class="post">
+                <h2>About Get To School</h2>
+                <p>Get To School is an indie game about the perilous journey to priso- I mean school. You will have to raid dungeons, kill a <br>
+                god or two, steal crates of fish while getting liquified by a middle-aged snob who has grown tired of living, and more! <br>
+            This game was entirely made with RPG Maker, so don't expect too much. Future updates for the game will include story <br>
+        progression, secret content, but most importantly, random #@!$ that I throw in because I'm bored.</p>
+            </div>
+            <div class="post">
+                <h2></h2>
+            </div>
+            <div class="post">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <a href="img/battle.png"><img src="img/battle.png" alt=""></a>
+                    <a href="img/fpassdog.png"><img src="img/fpassdog.png" alt=""></a>
+                    <a href="img/guardchatter.png"><img src="img/guardchatter.png" alt=""></a>
+                    <a href="img/dungeondoor.png"><img src="img/dungeondoor.png" alt=""></a>
+                    <a href="img/boulder.png"><img src="img/boulder.png" alt=""></a>
+                     
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+<script>
+
+    var lightMode = true;
+    
+    function changeSheet() {
+        // make lightMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if lightMode turned off, display dark stylesheet
+        if (lightMode == false) {
+        console.log("Turning dark mode on...");
+        darkSheet.media = "";
+        lightSheet.media = "none";
+        } else {
+        console.log("Turning light mode on...");
+        darkSheet.media = "none";
+        lightSheet.media = "";
+        }
+    }
+    
+    </script>
+
+</html>

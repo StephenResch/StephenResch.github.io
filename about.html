@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumpster Dave's Sweatshop</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>About Me</h1>
+            <a href="index.html">Home</a>  |
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School</a>  |
+            <a href="#" onclick="changeSheet()">Toggle Arson</a>
+        </div>
+
+        <div id="blogposts">
+            <div class="post">
+                <h2>Personality</h2>
+                <p>My name is [REDACTED] and I like to make jokes about everyone and everything, including myself. I'm generally a kind and thoughtful <br> person, and I will
+                    remain that way unless someone gets on my nerves. I can also become anxious over very miniscule events, which <br> is something that
+                    I'm working to fix. It's baffling that a simple pencil drop can rotate my smile 180 degress. It's even more baffling that you're <br>
+                    still reading this, so don't overthink a random nobody trying to write an autobiography on their "About Me" page. This is one example <br>of my
+                    silly personality taking over whatever I'm trying to do. 
+                </p>
+            </div>
+            <div class="post">
+                <h2>Academics</h2>
+                <p>At the time of typing this, I'm currently attending a tech school that shall not <br> be named for the sake of privacy. As an Honors 
+                    student (enrolled in all Honors classes), <br> my work ethic involves putting as much effort into an assignment as possible. <br> However, 
+                    my procrastination eventually takes control, causing me to sometimes <br> wait until the last minute to complete a task. Due to being in 
+                    a club, I'm on <br> the list of Distinguished Honor Roll students in my school. I plan to further <br> improve my skills as I experience high 
+                    school while working towards a scholarship for college. </p>              
+            </div>
+            <div class="post">
+                <h2 style="display: block;">Get To School</h2>
+                <p>Get To School is a smash hit indie game where you can sniff glue.</p>
+                <p>Click <a href="gettoschool/index.html">here</a> to play.</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+<script>
+
+    var lightMode = true;
+    
+    function changeSheet() {
+        // make lightMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if lightMode turned off, display dark stylesheet
+        if (lightMode == false) {
+        console.log("Turning dark mode on...");
+        darkSheet.media = "";
+        lightSheet.media = "none";
+        } else {
+        console.log("Turning light mode on...");
+        darkSheet.media = "none";
+        lightSheet.media = "";
+        }
+    }
+    
+    </script>
+
+</html>
